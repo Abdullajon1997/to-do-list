@@ -1,0 +1,38 @@
+{
+    "posts":[
+        {
+            "id":1,
+            "title":"json-server",
+            "author":"tupecode"
+        }
+    ],
+    "comments":[
+        {
+            "id":1,
+            "body":"some comment",
+            "postId":1
+        }
+    ],
+    "profile":
+        {
+            "name":"Typecode"
+        },
+        "Products": [
+        {
+            "id":1,
+            "isname": "Ergashev Tursunmurod",
+            "date":"2020-09-05",
+            "mark": 145,
+            "status":" O'tdi"
+            
+        },
+        {
+            "id":1,
+            "isname": "Jumayev Botir",
+            "date":"2020-09-05",
+            "mark": 120,
+            "status":" O'tdi"
+            
+        }
+        ]
+}

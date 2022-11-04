@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>imtixon 4-oy</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body class="no-scroll">
+    <header>
+        <div class="container">
+            <div class="header__inner">
+                    <h1 class="exam__h1">Exam results</h1>
+                    <button class="out__btn">Add new student +</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="container exam">
+                <div class="exam__inner">
+                    
+                    <h2 class="form__h2">Filtr</h2>
+                    <form>
+                        <p class="form__p">search</p>
+                        <label for="Filtr">
+                            <input class="search" type="search" placeholder="Falonchi">
+                        </label>
+                        <p class="form__p">Mark</p>
+                        <label class="form_label" for="Mark">
+                            <input class="from" type="number" placeholder="From">
+                            <input class="to" type="number" placeholder="To" >
+                        </label>
+                        <p class="form__p">sort by</p>
+                        <select class="elSelect" name="sort" id="sort">
+                            <option value="A-Z">Mark:to highest</option>
+                            <option value="Z-A">Mark:to lowest</option>
+                        </select>
+                        <button class="form__filtr">Filter</button>
+                    </form>
+                </div>
+                <div class="exam__out">
+                    <div class="out__div">
+                        <h2>Students List</h2>
+                    <div>
+                        <p>Count:</p>
+                        <p>Average mark:</p>
+                    </div>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th class="th">Id</th>
+                                <th id="name" class="th">Name & Lastname</th>
+                                <th class="th">Market date</th>
+                                <th class="th">Mark</th>
+                                <th class="th">Status</th>
+                                <th class="th">Edit</th>
+                                <th class="th">Delete</th>
+                            </tr>
+                        </thead>
+                        <tbody class="wrapper">
+                            
+                        </tbody>
+                    </table>
+                </div>
+                
+            </div>
+        </section>
+
+
+
+
+        <div class="container">
+            <div class="modal">
+                <div class="modal__inner">
+                    <div class="modal__header">
+                        <div class="modal__top">
+                            <h4 class="modal__title">Add student</h4>
+                            <img class="close" src="./image/photo_2022-11-03_19-54-27.jpg" alt="close">
+                        </div>
+                        <span class="line"></span>
+                        <form>
+                            <label for="Name"><p>Name</p>
+                                <input id="name" class="elinput" type="text" placeholder="Flaonchi" >
+                            </label>
+                            <label for="Name"><p>Lastname</p>
+                                <input id="lastname" class="elinput" type="text" placeholder="Pismadonchi" >
+                            </label>
+                            <label for="Name"><p>Mark</p>
+                                <input id="mark" class="elinput" type="text" placeholder="150" >
+                            </label>
+                            <button class="modal__button">Add student</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+    </main>
+
+
+
+
+
+    <script src="./db.json"></script>
+    <script src="./js/utils.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+</html>
